@@ -123,6 +123,7 @@ section:last-child{
     display: flex;
     margin:0 20px 10px 20px;
     background-color: white;
+    height: 135px;
 }
 
 .funcionarios-card:hover{
@@ -130,7 +131,7 @@ section:last-child{
 }
 
 .funcionarios-card>div:first-child{
-    width: 10%;
+    width: 95px;
 }
 
 .funcionarios-card-info{
@@ -160,4 +161,29 @@ section:last-child{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width:600px) {
+    .gestor-pesquisa{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .gestor-pesquisa>form{
+        width: 100%;
+    }
+
+    .gestor-pesquisa>button{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .funcionarios-card-info p{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
 }
